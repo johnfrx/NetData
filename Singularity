@@ -8,4 +8,7 @@ From: centos:latest
 %post
     #echo "The post section is where you can install, and configure your container."
     #
-    bash <(curl -Ss https://my-netdata.io/kickstart.sh)
+    yum install -y wget
+    wget https://my-netdata.io/kickstart.sh
+    printf "\ny\n" | bash kickstart.sh
+    
