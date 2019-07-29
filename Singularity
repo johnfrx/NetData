@@ -11,4 +11,5 @@ From: centos:latest
     yum install -y wget
     wget https://my-netdata.io/kickstart.sh
     printf "\ny\n" | bash kickstart.sh
+    #trigger commit
     
