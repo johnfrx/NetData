@@ -2,8 +2,8 @@ Bootstrap: docker
 From: centos:latest
 
 %runscript
-    exec echo "Centos7 image for use with globus"
-
+    #exec echo "Centos7 image for use with globus"
+    exec systemctl start netdata
 
 %post
     #echo "The post section is where you can install, and configure your container."
