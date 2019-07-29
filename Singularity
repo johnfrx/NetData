@@ -12,4 +12,5 @@ From: centos:latest
     wget https://my-netdata.io/kickstart.sh
     printf "\ny\n" | bash kickstart.sh
     #trigger commit
+    #
     
