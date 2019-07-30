@@ -8,10 +8,10 @@ From: centos:latest
 %post
     #echo "The post section is where you can install, and configure your container."
     #
-        
+        mkdir /var/lib/netdata
+        chown -R netdata:netdata /var/lib/netdata
         yum -y install autoconf automake curl gcc git libmnl-devel libuuid-devel openssl-devel libuv-devel lz4-devel Judy-devel make nc pkgconfig python zlib-devel
         git clone https://github.com/netdata/netdata.git --depth=100
         cd netdata
         echo | ./netdata-installer.sh
-        chown -R netdata:netdata /var/lib/netdata
 
