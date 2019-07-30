@@ -9,6 +9,7 @@ From: centos:latest
     #echo "The post section is where you can install, and configure your container."
     #
     yum install -y wget
+    yum install -y systemd
     wget https://my-netdata.io/kickstart.sh
     printf "\ny\n" | bash kickstart.sh
     #trigger commit
