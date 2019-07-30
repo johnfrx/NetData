@@ -8,6 +8,7 @@ From: centos:latest
 %post
     #echo "The post section is where you can install, and configure your container."
     #
+        adduser netdata
         mkdir /var/lib/netdata
         chown -R netdata:netdata /var/lib/netdata
         yum -y install autoconf automake curl gcc git libmnl-devel libuuid-devel openssl-devel libuv-devel lz4-devel Judy-devel make nc pkgconfig python zlib-devel
